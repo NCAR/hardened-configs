@@ -1,5 +1,7 @@
 <Directory /path/to/directory>
-    php_flag engine off
+    ServerSignature Off
+    php_flag engine Off
+    php_value file_uploads Off
     <FilesMatch ".+\.ph(p[3457]?|t|tml)$">
         Require all denied
     </FilesMatch>
