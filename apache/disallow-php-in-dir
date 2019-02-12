@@ -1,0 +1,6 @@
+<Directory /path/to/directory>
+    php_flag engine off
+    <FilesMatch ".+\.ph(p[3457]?|t|tml)$">
+        Require all denied
+    </FilesMatch>
+</Directory>
